@@ -13,5 +13,10 @@ jobs:
     steps: 
       - run: echo "hello world"
       - run: echo "hey this is the second step" # now these steps will run in sequence
+  print-hello-world2:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: echo "hello world"
+      - run: echo "hey this is the second step"
   # check-linting:
   # unit-testing:
