@@ -1,0 +1,44 @@
+# Comment: hey this is a test yaml
+
+# basics of yaml
+service: yaml-basic-stuff
+test: script1
+test2: script2
+
+# as we can see it is more condense than traditional json
+# it can also have nested objects using indentation
+myapp: 
+  service: yaml-basic-stuff
+  test: script1
+  test2: script2
+
+# Lists in yaml
+# it is way of organising elements in an array
+# if we start adding key value pairs to the below array
+# yaml automatically takes them as object
+myArray:
+  - 1
+  - 2
+  - 3
+  - 4
+
+# the above code is equivalent to the below code
+myArray2: [1, 2, 3, 4]
+# this syntax won't work with array of objects 
+
+# for array of objects
+arrObj: 
+  - key1: value1
+    randomkey: randomvalue
+  - key2: value2 # new object is created at the same level of indetation with - as a suffix
+    randomkey2: randomvalue2 
+
+# multiline strings
+multilineString: Hey everyone my name is Anshuman Padiya
+              I am 21 years old and I am currently doing nothing
+
+# the | pipe symbol indicates that until yaml sees any other key it will consider everything writter beyong it 
+# as a string
+stringy: |
+  Hey everyone my name is Anshuman Padiya 
+  I am 21 years old.
