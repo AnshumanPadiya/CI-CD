@@ -20,3 +20,13 @@ jobs:
       - run: echo "hey this is the second step"
   # check-linting:
   # unit-testing:
+
+
+name: My second github action
+on: [push]
+jobs:
+  build-app: 
+    runs-on: ubuntu-latest
+    steps: 
+      - users: actions/checkout@v2
+      - run: tree
