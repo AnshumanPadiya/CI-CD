@@ -1,25 +1,25 @@
 # valid github action
-name: My first github action
-# now we need to mention when should this action should kick in
-# eg on push pull_request deployment_status
-on: [push]
-# now the github action would need to know what should it be doing
-# to specify it we have to mention it's job
-# here it is not compulsory that the 2 jobs will run one after another
-# to make it like that we have to convert it into a list with - prefix for each job
-jobs: 
-  print-hello-world:
-    runs-on: ubuntu-latest
-    steps: 
-      - run: echo "hello world"
-      - run: echo "hey this is the second step" # now these steps will run in sequence
-  print-hello-world2:
-    runs-on: ubuntu-latest
-    steps: 
-      - run: echo "hello world"
-      - run: echo "hey this is the second step"
-  # check-linting:
-  # unit-testing:
+# name: My first github action
+# # now we need to mention when should this action should kick in
+# # eg on push pull_request deployment_status
+# on: [push]
+# # now the github action would need to know what should it be doing
+# # to specify it we have to mention it's job
+# # here it is not compulsory that the 2 jobs will run one after another
+# # to make it like that we have to convert it into a list with - prefix for each job
+# jobs: 
+#   print-hello-world:
+#     runs-on: ubuntu-latest
+#     steps: 
+#       - run: echo "hello world"
+#       - run: echo "hey this is the second step" # now these steps will run in sequence
+#   print-hello-world2:
+#     runs-on: ubuntu-latest
+#     steps: 
+#       - run: echo "hello world"
+#       - run: echo "hey this is the second step"
+#   # check-linting:
+#   # unit-testing:
 
 
 name: My second github action
