@@ -29,4 +29,10 @@ jobs:
       runs-on: ubuntu-latest
       steps: 
         - uses: actions/checkout@v2
-        - run: tree
+        - uses: actions/setup-node@v2
+          with: 
+            node-version: '14.17.0'
+        - run: tree # if this runs perfectly then our project is cloned and we can start building things
+        - run: node -v
+
+
