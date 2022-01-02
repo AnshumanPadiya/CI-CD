@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "cd build && vc --prod"
+    "deploy": "cd build && vc --prod --token=A15ThLVnxlVqzwyCswJoPc4p"
   },
   "eslintConfig": {
     "extends": [
