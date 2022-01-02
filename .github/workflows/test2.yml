@@ -35,7 +35,7 @@
 #         - run: tree # if this runs perfectly then our project is cloned and we can start building things
 #         - run: node -v
 
-# Complete pipeline
+# Complete pipeline v2
 name: My third github action
 on: [push]
 jobs:
