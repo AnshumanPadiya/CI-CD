@@ -36,3 +36,27 @@ jobs:
         - run: node -v
 
 
+# name: My second github action
+# on: [push]
+# jobs:
+#   build-app: 
+#       runs-on: ubuntu-latest
+#       steps: 
+#         - uses: actions/checkout@v2
+#         - uses: actions/setup-node@v2
+#           with: 
+#             node-version: '14.17.0'
+#         - name: Project directory and version
+#           run: tree 
+#         - run: node -v
+#         - name: Install node_moduels
+#           run: yarn
+#         - name: Build the porject
+#           run : npm run build
+          - name: Deploying the project
+            env:
+              VERCEL_ORG_ID: DvX2r1DEHKquI0J5ha5IRNV1
+              VERCEL_PRO_ID: prj_mh2Zzgxw50ivNXXoEojiUIrwXMNf
+            run: yarn deploy
+#         - name: Setup finish
+#           run: echo "Setup finished"
