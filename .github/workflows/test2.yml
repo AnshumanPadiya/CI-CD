@@ -41,7 +41,7 @@ on: [push]
 jobs:
   build-app: 
       runs-on: ubuntu-latest
-      env:
+      env: #repo secrets
         VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         VERCEL_TOKKEN: ${{ secrets.VERCEL_TOKEN }}
         VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}            
